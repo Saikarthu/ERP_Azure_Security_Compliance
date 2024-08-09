@@ -1,0 +1,12 @@
+
+---
+- name: Compliance check
+  hosts: all
+  tasks:
+    - name: Ensure required packages are installed
+      package:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - auditd
+        - clamav
