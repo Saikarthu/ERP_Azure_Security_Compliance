@@ -1,0 +1,12 @@
+
+{
+  "policyRule": {
+    "if": {
+      "field": "location",
+      "equals": "eastus"
+    },
+    "then": {
+      "effect": "audit"
+    }
+  }
+}
